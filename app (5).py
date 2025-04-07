@@ -11,7 +11,7 @@ def fetch_news(api_key):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        api_key = 'dea097b834784195938ace34d44e6acd'  
+        api_key = 'd**************************'  
         news_articles = fetch_news(api_key)
         if not news_articles:
             return render_template('index.html', message="No articles found.")
